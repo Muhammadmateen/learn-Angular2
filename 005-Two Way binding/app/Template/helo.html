@@ -1,0 +1,44 @@
+
+
+<h1>One Way Binding</h1>
+<form>
+    <input type="text" [value]="firstName"><br>
+    <input type="text" [value]="lastName"><br>
+    <textarea [value]="'Details : '+details"><br>
+    <input [value]="age">
+
+    </textarea>
+
+    <p>
+        
+        First Name : {{firstName}}<br>
+        Last Name : {{lastName}}<br>
+        Details : {{details}}<br>
+        age : {{age}}
+    </p>
+
+
+</form>
+<button (click)="checkDetails()">Check Details</button>
+
+<hr>
+<h1>Two Way Binding</h1>
+<form>
+    <input type="text" [(ngModel)]="user_fName"><br>
+    <input type="text" [(ngModel)]="user_lName"><br>
+    <textarea [(ngModel)]="user_details"><br>
+    <input [(ngModel)]="user_age">
+
+    </textarea>
+
+    <p>
+        
+        First Name : {{user_fName}}<br>
+        Last Name : {{user_lName}}<br>
+        Details : {{user_details}}<br>
+        age : {{user_age}}
+    </p>
+
+
+</form>
+<button (click)="checkUserDetails()">Check Details</button>
